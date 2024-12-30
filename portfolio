@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Web Design Demonstration</title>
+ <link rel="stylesheet" href="styles.css">
+ <style>
+ /* Internal CSS for responsiveness */
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ }
+ 
+ header {
+ background-color: #7a841d;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ }
+ .container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px;
+ }
+ .box {
+ flex: 1 1 calc(33.333% - 20px);
+ background-color: #daea2a;
+ padding: 20px;
+ text-align: center;
+ border: 1px solid #178d36;
+ border-radius: 5px;
+ box-sizing: border-box;
+ }
+ @media (max-width: 768px) {
+ .box {
+ flex: 1 1 calc(50% - 20px);
+ }
+ }
+ @media (max-width: 480px) {
+ .box {
+ flex: 1 1 100%;
+ }
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>Official Responsive Web Design </h1>
+ </header>
+ <div class="container">
+ <div class="box">TURTLE</div>
+ <div class="box">DOG</div>
+ <div class="box">CAT</div>
+ <div class="box">HORSE</div>
+ 
+ </div>
+ <footer style="text-align: center; padding: 10px; background-color: #7a841d; color: white;">
+ Made By Team  Swagstar &copy; 2024
+ </footer>
+</body>
+</html>
